@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link rel="stylesheet" href="../Style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+
+<body class="body">
+    <!-- header -->
+    <nav class="navbar justify-content-between bg-black">
+        <div class="container">
+            <div class="logo">
+                <a class="btn text-white border-0 fs-5 fw-bold ms-lg-1 me-lg-1 mt-lg-3 mb-lg-3"
+                    href="../index.html">BIKE</a>
+            </div>
+            <div class="d-flex ms-auto">
+                <div class="shopnow me-4">
+                    <a class="btn text-white rounded-0 fw-bold border-0 me-lg-3 ms-lg-3" href="../Shop/shop.html">SHOP
+                        NOW</a>
+                </div>
+                <div class="dropdown me-3 mt-2">
+                    <a href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                        <iconify-icon class="text-white fs-4" icon="lets-icons:user-alt-light"></iconify-icon>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-sm-end border-0 mt-2">
+                        <!-- <li><a class="dropdown-item" href="Account/signin.html">Sign in</a></li>
+                        <li><a class="dropdown-item" href="Account/register.html">Register</a></li> -->
+                        <li><a class="dropdown-item" href="../Customer/overview.html">Overview</a></li>
+                        <li><a class="dropdown-item" href="../Customer/overview.html">Profile</a></li>
+                        <li><a class="dropdown-item" href="../Customer/overview.html">Orders</a></li>
+                        <li><a class="dropdown-item" href="../Customer/overview.html">Reviews</a></li>
+                        <li><a class="dropdown-item" href="../Customer/overview.html">Wish list</a></li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    </ul>
+                </div>
+                <a href="../Cart/cart.html" class="mt-1 position-relative me-4 rounded-pill">
+                    <iconify-icon class="text-white fs-4 ms-lg-1 me-lg-1 mt-1"
+                        icon="lets-icons:bag-alt-light"></iconify-icon>
+                    <span
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-white text-black fw-normal">
+                        0
+                    </span>
+                </a>
+            </div>
+            <button class="list bg-white navbar-toggler border-0 shadow-none rounded-0" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                aria-label="Toggle navigation">
+                <iconify-icon class="fs-2 me-1 ms-1 me-md-2 ms-md-2 mt-1 mb-1 mt-md-3 mb-md-3"
+                    icon="fluent:list-rtl-20-regular"></iconify-icon>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MENU</h5>
+                    <button type="button" class="btn border-0 rounded-pill" data-bs-dismiss="offcanvas"
+                        aria-label="Close">
+                        <iconify-icon class="fs-1 mt-1" icon="lets-icons:close-ring-light"></iconify-icon>
+                    </button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- body -->
+    <div class="container">
+        <!-- row-1 -->
+        <div class="row mt-5">
+            <h1 class="fw-normal mb-md-4">Payment & Shipping</h1>
+            <div class="col">
+                <ul class="nav nav-underline justify-content-center mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item me-2" role="presentation">
+                        <button class="nav-link active text-black fw-normal" id="pills-address-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-address" type="button" role="tab"
+                            aria-controls="pills-address" aria-selected="true">Address</button>
+                    </li>
+                    <li class="nav-item ms-2 me-2" role="presentation">
+                        <button class="nav-link text-black fw-normal" id="pills-payment-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-payment" type="button" role="tab" aria-controls="pills-payment"
+                            aria-selected="false">Payment & Shipping</button>
+                    </li>
+                    <li class="nav-item ms-2" role="presentation">
+                        <button class="nav-link text-black fw-normal" id="pills-confirm-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-confirm" type="button" role="tab" aria-controls="pills-confirm"
+                            aria-selected="false">Confirm</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-address" role="tabpanel"
+                        aria-labelledby="pills-address-tab" tabindex="0">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6">
+                                <p class="mt-3 fs-4 text-secondary">Address</p>
+                                <p class="fw-bold mt-4">Delivery address</p>
+                                <div class="card col-12 shadow-lg border-0 bg-transparent">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col">
+                                                <h1 class="fw-normal fs-6">Nhat Quang</h1>
+                                            </div>
+                                            <div class="col text-end">
+                                                <a class="text-black" href="../Customer/overview.html">
+                                                    <iconify-icon class="fs-5" icon="lucide:edit"></iconify-icon>
+                                                </a>
+                                            </div>
+                                            <h1 class="mt-2 text-secondary fw-normal fs-6">Colour fog grey</h1>
+                                            <h1 class="mt-2 text-secondary fw-normal fs-6">Colour fog grey</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="fw-bold mt-4">Billing address</p>
+                                <div class="card col-12 shadow-lg border-0 bg-transparent">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col">
+                                                <h1 class="fw-normal fs-6">Nhat Quang</h1>
+                                            </div>
+                                            <div class="col text-end">
+                                                <a class="text-black" href="../Customer/overview.html">
+                                                    <iconify-icon class="fs-5" icon="lucide:edit"></iconify-icon>
+                                                </a>
+                                            </div>
+                                            <h1 class="mt-2 text-secondary fw-normal fs-6">Colour fog grey</h1>
+                                            <h1 class="mt-2 text-secondary fw-normal fs-6">Colour fog grey</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center mt-5 checkout">
+                                    <div class="col-12">
+                                        <a class="btn btn-dark border-0 text-white w-100" href="register.html">
+                                            <h1 class="fs-6 mt-2 mb-2 fw-normal ms-2 me-2">Continue</h1>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-payment" role="tabpanel" aria-labelledby="pills-payment-tab"
+                        tabindex="0">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6">
+                                <p class="mt-3 fs-4 text-secondary mb">Payment</p>
+                                <p class="fw-bold mt-4">Payment method</p>
+                                <div
+                                    class="form-check d-flex align-items-center rounded-3 border border-1 border-secondary">
+                                    <input class="form-check-input shadow-none ms-2 bg-black" type="radio"
+                                        name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label text-secondary" for="exampleRadios1">
+                                        <img src="../Image/cart/vnpay.png" width="100" class="img-fluid ms-4 me-2"
+                                            alt="...">
+                                        VNPay
+                                    </label>
+                                </div>
+                                <div
+                                    class="form-check mt-3 d-flex align-items-center rounded-3 border border-1 border-secondary">
+                                    <input class="form-check-input shadow-none ms-2 bg-black" type="radio"
+                                        name="exampleRadios" id="exampleRadios2" value="option2">
+                                    <label class="form-check-label text-secondary" for="exampleRadios2">
+                                        <img src="../Image/cart/paypal.png" width="100" class="img-fluid ms-4 me-2"
+                                            alt="...">
+                                        PayPal
+                                    </label>
+                                </div>
+                                <p class="fw-bold mt-4">Delivery option</p>
+                                <div
+                                    class="form-check d-flex align-items-center rounded-3 border border-1 border-secondary">
+                                    <input class="form-check-input shadow-none ms-2 bg-black" type="radio"
+                                        name="exampleRadios" id="exampleRadios3" value="option3">
+                                    <label class="form-check-label text-secondary" for="exampleRadios3">
+                                        <img src="../Image/cart/cash.png" width="100" class="img-fluid ms-4 me-2"
+                                            alt="...">
+                                        Cash On Delivery
+                                    </label>
+                                </div>
+                                <div class="row justify-content-center mt-5 checkout">
+                                    <div class="col-12">
+                                        <a class="btn btn-dark border-0 text-white w-100" href="register.html">
+                                            <h1 class="fs-6 mt-2 mb-2 fw-normal ms-2 me-2">Continue</h1>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-confirm" role="tabpanel" aria-labelledby="pills-confirm-tab"
+                        tabindex="0">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6">
+                                <p class="mt-3 fs-4 text-secondary mb">Review order</p>
+                                <p class="icon-link fw-bold mt-3">
+                                    Address
+                                    <a class="mt-1 text-black ms-2" href="#">
+                                        <iconify-icon class="fs-5" icon="lucide:edit"></iconify-icon>
+                                    </a>
+                                </p>
+                                <p class="mt-2">Delivery address</p>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="text-secondary">Fullname:</p>
+                                        <p class="text-secondary">Address:</p>
+                                        <p class="text-secondary">Phone number:</p>
+                                        <p class="text-secondary">Email address:</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="text-secondary">Nhat Quang</p>
+                                        <p class="text-secondary">Viet Nam</p>
+                                        <p class="text-secondary">0397302140</p>
+                                        <p class="text-secondary">nhatquang45013@gmail.com</p>
+                                    </div>
+                                </div>
+                                <p class="icon-link fw-bold mt-3">
+                                    Payment & Shipping
+                                    <a class="mt-1 text-black ms-2" href="#">
+                                        <iconify-icon class="fs-5" icon="lucide:edit"></iconify-icon>
+                                    </a>
+                                </p>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="mt-2 text-secondary">Payment method:</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="mt-2 text-secondary">Cash</p>
+                                    </div>
+                                </div>
+                                <p class="icon-link fw-bold mt-3">
+                                    Orders
+                                    <a class="mt-1 text-black ms-2" href="cart.html">
+                                        <iconify-icon class="fs-5" icon="lucide:edit"></iconify-icon>
+                                    </a>
+                                </p>
+                                <div class="row mt-2 mb-5">
+                                    <div class="col">
+                                        <img src="../Image/product/pd(1).png" class="img-fluid" alt="...">
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="text-black fw-bold">ROSE BACKROAD GRX RX810 Di2 1x11</p>
+                                        <h1 class="fs-6 text-secondary fw-normal">Color: Red</h1>
+                                        <h1 class="fs-6 text-secondary fw-normal">Size: 50cm</h1>
+                                        <h1 class="fs-6 text-secondary fw-normal">Product code: 230467501</h1>
+                                    </div>
+                                    <div class="col text-end">
+                                        <h1 class="fs-6 text-secondary fw-normal">Quantity: 1</h1>
+                                        <h1 class="fs-6 text-black fw-bold">$4,449.00</h1>
+                                    </div>
+                                </div>
+                                <div class="card rounded-0 border-0 bg-secondary bg-opacity-10">
+                                    <div class="card-body">
+                                        <div class="row mt-1">
+                                            <div class="col">
+                                                <p class="text-black">Subtotal</p>
+                                                <p class="text-black">Delivery to Canada</p>
+                                            </div>
+                                            <div class="col text-end">
+                                                <p class="text-black">$4,449.00</p>
+                                                <p class="text-black">$250.00</p>
+                                            </div>
+                                        </div>
+                                        <hr class="mt-2 text-secondary">
+                                        <div class="row mt-4">
+                                            <div class="col">
+                                                <p class="text-black fw-bold">Total</p>
+                                                <p class="text-black">Incl. VAT</p>
+                                            </div>
+                                            <div class="col text-end">
+                                                <p class="text-black fw-bold">$4,699.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="icon-link fw-bold mt-4">Leave a message.</p>
+                                <h1 class="fs-6 text-secondary fw-normal">Questions and comments are processed
+                                    personally, so the shipment of your order will be <span class="text-black">delayed
+                                        by 2 - 3 business days.</span>
+                                </h1>
+                                <textarea
+                                    class="form-control mt-4 shadow-none border border-1 border-secondary rounded-0"
+                                    rows="4"></textarea>
+
+                                <div class="row justify-content-center mt-5 checkout">
+                                    <div class="col-12">
+                                        <a class="btn btn-dark border-0 text-white w-100" href="register.html">
+                                            <h1 class="fs-6 mt-2 mb-2 fw-normal ms-2 me-2">Buy now</h1>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid">
+        <div class="footer row mt-5">
+            <div class="col">
+                <div class="container mt-5 mb-5">
+                    <div class="row">
+                        <div class="col-lg">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <h2 class="text-white fs-4 fw-lighter mt-4">CONNECT WITH US:</h2>
+                                </div>
+                                <div class="col">
+                                    <ul class="nav">
+                                        <a class="btn bg-white mt-3 mb-3" href="#" role="button">
+                                            <iconify-icon class="text-black fs-3 mt-1"
+                                                icon="hugeicons:instagram"></iconify-icon>
+                                        </a>
+                                        <a class="btn bg-white ms-3 mt-3 mb-3" href="#" role="button">
+                                            <iconify-icon class="text-black fs-3 mt-1"
+                                                icon="hugeicons:twitter"></iconify-icon>
+                                        </a>
+                                        <a class="btn bg-white ms-3 mt-3 mb-3" href="#" role="button">
+                                            <iconify-icon class="text-black fs-3 mt-1"
+                                                icon="hugeicons:facebook-01"></iconify-icon>
+                                        </a>
+                                        <a class="btn bg-white ms-3 mt-3 mb-3" href="#" role="button">
+                                            <iconify-icon class="text-black fs-3 mt-1"
+                                                icon="hugeicons:google"></iconify-icon>
+                                        </a>
+                                        <a class="btn bg-white ms-3 mt-3 mb-3" href="#" role="button">
+                                            <iconify-icon class="text-black fs-3 mt-1"
+                                                icon="hugeicons:pinterest"></iconify-icon>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mt-5 mt-md-3">
+                                <input type="text" class="form-control rounded-0 shadow-none border-0 form-control-lg"
+                                    placeholder="Enter your email for promo offers">
+                                <button class="btn bg-black rounded-0 border-0 text-white w-25" type="button"
+                                    id="button-addon2">SUBMIT</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row bg-black">
+            <div class="col">
+                <div class="container mb-5">
+                    <div class="row">
+                        <div class="col-lg-4 mt-4 mt-md-5">
+                            <div class="logo">
+                                <a class="btn text-white border-0 fs-5 fw-bold ms-lg-1 me-lg-1 mt-lg-3 mb-lg-3"
+                                    href="index.html">BIKE</a>
+                            </div>
+                            <h1 class="fs-6 mt-4 text-secondary fw-normal">All Rights Reserved &#169;2017</h1>
+                        </div>
+                        <div class="col-lg mt-4 mt-md-5">
+                            <h2 class="text-white fs-4 fw-lighter">INFORMATION</h2>
+                            <hr class="text-white">
+                            <p class="mt-3"><a class="text-white text-decoration-none" href="#">About Us</a></p>
+                            <p class="mt-3"><a class="text-white text-decoration-none" href="#">Delivery Infomation</a>
+                            </p>
+                            <p class="mt-3"><a class="text-white text-decoration-none" href="#">Privacy Policy</a></p>
+                            <p class="mt-3"><a class="text-white text-decoration-none" href="#">Terms & Condition</a>
+                            </p>
+                        </div>
+                        <div class="col-lg mt-4 mt-md-5">
+                            <h2 class="text-white fs-4 fw-lighter">ACCOUNT</h2>
+                            <hr class="text-white">
+                            <p class="mt-3"><a class="text-white text-decoration-none" href="#">My account</a></p>
+                            <p class="mt-3"><a class="text-white text-decoration-none" href="#">Order History</a>
+                            </p>
+                            <p class="mt-3"><a class="text-white text-decoration-none" href="#">Wishlist</a></p>
+                            <p class="mt-3"><a class="text-white text-decoration-none" href="#">Newsietter</a>
+                            </p>
+                        </div>
+                        <div class="col-lg mt-4 mt-md-5">
+                            <h2 class="text-white fs-4 fw-lighter">EXTRAS</h2>
+                            <hr class="text-white">
+                            <p class="mt-3"><a class="text-white text-decoration-none" href="#">Gift Voucher</a></p>
+                            <p class="mt-3"><a class="text-white text-decoration-none" href="#">Specials</a>
+                            </p>
+                            <p class="mt-3"><a class="text-white text-decoration-none" href="#">Site Map</a></p>
+                            <p class="mt-3"><a class="text-white text-decoration-none" href="#">Blog</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

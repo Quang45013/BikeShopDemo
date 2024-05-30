@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>BIKE Cart</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link rel="stylesheet" href="../Style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+
+<body class="body">
+
+    <!-- header -->
+    <nav class="navbar justify-content-between bg-black">
+        <div class="container">
+            <div class="logo">
+                <a class="btn text-white border-0 fs-5 fw-bold ms-lg-1 me-lg-1 mt-lg-3 mb-lg-3"
+                    href="../index.html">BIKE</a>
+            </div>
+            <div class="d-flex ms-auto">
+                <div class="shopnow me-4">
+                    <a class="btn text-white rounded-0 fw-bold border-0 me-lg-3 ms-lg-3" href="../Shop/shop.html">SHOP
+                        NOW</a>
+                </div>
+                <div class="dropdown me-3 mt-2">
+                    <a href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                        <iconify-icon class="text-white fs-4" icon="lets-icons:user-alt-light"></iconify-icon>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-sm-end border-0 mt-2">
+                        <!-- <li><a class="dropdown-item" href="Account/signin.html">Sign in</a></li>
+                        <li><a class="dropdown-item" href="Account/register.html">Register</a></li> -->
+                        <li><a class="dropdown-item" href="../Customer/overview.html">Overview</a></li>
+                        <li><a class="dropdown-item" href="../Customer/overview.html">Profile</a></li>
+                        <li><a class="dropdown-item" href="../Customer/overview.html">Orders</a></li>
+                        <li><a class="dropdown-item" href="../Customer/overview.html">Reviews</a></li>
+                        <li><a class="dropdown-item" href="../Customer/overview.html">Wish list</a></li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    </ul>
+                </div>
+                <a href="../Cart/cart.html" class="mt-1 position-relative me-4 rounded-pill">
+                    <iconify-icon class="text-white fs-4 ms-lg-1 me-lg-1 mt-1"
+                        icon="lets-icons:bag-alt-light"></iconify-icon>
+                    <span
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-white text-black fw-normal">
+                        0
+                    </span>
+                </a>
+            </div>
+            <button class="list bg-white navbar-toggler border-0 shadow-none rounded-0" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                aria-label="Toggle navigation">
+                <iconify-icon class="fs-2 me-1 ms-1 me-md-2 ms-md-2 mt-1 mb-1 mt-md-3 mb-md-3"
+                    icon="fluent:list-rtl-20-regular"></iconify-icon>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MENU</h5>
+                    <button type="button" class="btn border-0 rounded-pill" data-bs-dismiss="offcanvas"
+                        aria-label="Close">
+                        <iconify-icon class="fs-1 mt-1" icon="lets-icons:close-ring-light"></iconify-icon>
+                    </button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- body -->
+    <div class="container">
+        <!-- row-1 -->
+        <div class="row mt-5">
+            <a class="icon-link link-secondary link-underline-secondary mb-3" href="../Shop/shop.html">
+                <iconify-icon icon="lets-icons:arrow-left"></iconify-icon>
+                Continue shopping
+            </a>
+            <h1 class="fw-normal mb-md-4 mt-4">Your shopping cart</h1>
+            <hr class="mt-4 text-secondary">
+            <div class="container">
+                <div class="row mt-4">
+                    <div class="col-2">
+                        <img src="../Image/product/pd(1).png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <h1 class="fw-normal fs-6">ROSE BACKROAD AL GRX RX400</h1>
+                                <h1 class="mt-4 text-secondary fw-normal fs-6">Colour fog grey</h1>
+                                <h1 class="text-secondary fw-normal fs-6 mt-3">Size 46cm</h1>
+                                <h1 class="text-secondary fw-normal fs-6 mt-3">Product code: 234074102</h1>
+                            </div>
+                            <div class="col col-lg-3 d-flex align-items-center">
+                                <input type="number"
+                                    class="form-control pt-2 py-2 shadow-none border border-1 border-secondary mt-1"
+                                    placeholder="Quantity" min="1" max="100" value="1">
+                            </div>
+                            <div class="col-lg-2 d-lg-flex justify-content-lg-end align-items-center">
+                                <h1 class="fw-normal fs-6 mt-4 mt-lg-2">$1,999.00</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 col-lg-1 d-lg-flex align-items-lg-center justify-content-end">
+                        <a class="btn bg-secondary bg-opacity-10 rounded-pill" href="#" role="button">
+                            <iconify-icon class="text-black fs-3 mt-1" icon="fluent:delete-20-regular"></iconify-icon>
+                        </a>
+                    </div>
+                </div>
+                <hr class="mt-5 text-secondary">
+                <div class="row mt-4">
+                    <div class="col-2">
+                        <img src="../Image/product/pd(1).png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <h1 class="fw-normal fs-6">ROSE BACKROAD AL GRX RX400</h1>
+                                <h1 class="mt-4 text-secondary fw-normal fs-6">Colour fog grey</h1>
+                                <h1 class="text-secondary fw-normal fs-6 mt-3">Size 46cm</h1>
+                                <h1 class="text-secondary fw-normal fs-6 mt-3">Product code: 234074102</h1>
+                            </div>
+                            <div class="col col-lg-3 d-flex align-items-center">
+                                <input type="number"
+                                    class="form-control pt-2 py-2 shadow-none border border-1 border-secondary mt-1"
+                                    placeholder="Quantity" min="1" max="100" value="1">
+                            </div>
+                            <div class="col-lg-2 d-lg-flex justify-content-lg-end align-items-center">
+                                <h1 class="fw-normal fs-6 mt-4 mt-lg-2">$1,999.00</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 col-lg-1 d-lg-flex align-items-lg-center justify-content-end">
+                        <a class="btn bg-secondary bg-opacity-10 rounded-pill" href="#" role="button">
+                            <iconify-icon class="text-black fs-3 mt-1" icon="fluent:delete-20-regular"></iconify-icon>
+                        </a>
+                    </div>
+                </div>
+                <hr class="mt-5 text-secondary">
+                <div class="row mt-4">
+                    <div class="col-2">
+                        <img src="../Image/product/pd(1).png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <h1 class="fw-normal fs-6">ROSE BACKROAD AL GRX RX400</h1>
+                                <h1 class="mt-4 text-secondary fw-normal fs-6">Colour fog grey</h1>
+                                <h1 class="text-secondary fw-normal fs-6 mt-3">Size 46cm</h1>
+                                <h1 class="text-secondary fw-normal fs-6 mt-3">Product code: 234074102</h1>
+                            </div>
+                            <div class="col col-lg-3 d-flex align-items-center">
+                                <input type="number"
+                                    class="form-control pt-2 py-2 shadow-none border border-1 border-secondary mt-1"
+                                    placeholder="Quantity" min="1" max="100" value="1">
+                            </div>
+                            <div class="col-lg-2 d-lg-flex justify-content-lg-end align-items-center">
+                                <h1 class="fw-normal fs-6 mt-4 mt-lg-2">$1,999.00</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 col-lg-1 d-lg-flex align-items-lg-center justify-content-end">
+                        <a class="btn bg-secondary bg-opacity-10 rounded-pill" href="#" role="button">
+                            <iconify-icon class="text-black fs-3 mt-1" icon="fluent:delete-20-regular"></iconify-icon>
+                        </a>
+                    </div>
+                </div>
+                <hr class="mt-5 text-secondary">
+            </div>
+
+            <div class="container">
+                <div class="row mt-4">
+                    <div class="col-lg-7">
+                        <p class="text-black fw-normal mt-1">Payment methods</p>
+                        <button type="button" class="btn bg-secondary bg-opacity-10 me-1 pt-1 py-1 border-0">
+                            <img src="../Image/cart/vnpay.png" width="50" class="img-fluid ms-2 me-2" alt="...">
+                        </button>
+                        <button type="button" class="btn bg-secondary bg-opacity-10 ms-1 me-1 pt-1 py-1 border-0">
+                            <img src="../Image/cart/paypal.png" width="50" class="img-fluid ms-2 me-2" alt="...">
+                        </button>
+                        <button type="button" class="btn bg-secondary bg-opacity-10 ms-1 pt-1 py-1 border-0">
+                            <img src="../Image/cart/cash.png" width="50" class="img-fluid ms-2 me-2" alt="...">
+                        </button>
+                        <p class="text-black fw-normal mt-4">Our shipping options</p>
+                        <button type="button" class="btn bg-secondary bg-opacity-10 me-1 pt-1 py-1 border-0">
+                            <img src="../Image/cart/ghn.png" width="50" class="img-fluid ms-2 me-2" alt="...">
+                        </button>
+                        <button type="button" class="btn bg-secondary bg-opacity-10 ms-1 me-1 pt-1 py-1 border-0">
+                            <img src="../Image/cart/ghtk.png" width="50" class="img-fluid ms-2 me-2" alt="...">
+                        </button>
+                        <button type="button" class="btn bg-secondary bg-opacity-10 ms-1 pt-1 py-1 border-0">
+                            <img src="../Image/cart/ghht.png" width="50" class="img-fluid ms-2 me-2" alt="...">
+                        </button>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-secondary bg-opacity-10 border-0 mt-5 mt-lg-1">
+                            <div class="card-body">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h1 class="text-secondary fw-normal fs-6 mt-2 mb-3">Subtotal</h1>
+                                            <a class="link-underline-secondary" href="#">
+                                                <h1 class="text-secondary fw-normal fs-6 mt-2">Delivery to United States
+                                                    of America</h1>
+                                            </a>
+                                        </div>
+                                        <div class="col text-end">
+                                            <h1 class="text-secondary fw-normal fs-6 mt-2 mb-3">$6,448.00</h1>
+                                            <h1 class="text-secondary fw-normal fs-6 mt-2">$500.00</h1>
+                                        </div>
+                                    </div>
+                                    <hr class="mt-3 text-secondary">
+                                    <div class="form-check col-4 col-md-3" data-bs-toggle="collapse"
+                                        href="#collapseExample" role="button" aria-expanded="false"
+                                        aria-controls="collapseExample">
+                                        <input class="form-check-input shadow-none border-0 bg-secondary bg-opacity-50"
+                                            type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            <h1 class="text-secondary fw-normal fs-6">Add voucher</h1>
+                                        </label>
+                                    </div>
+                                    <div class="collapse mt-4" id="collapseExample">
+                                        <div class="input-group">
+                                            <input type="text"
+                                                class="form-control shadow-none border-0 bg-transparent border-bottom rounded-0"
+                                                placeholder="Enter voucher code or card number"
+                                                aria-describedby="button-addon2">
+                                            <button class="btn bg-black text-white rounded" type="button"
+                                                id="button-addon2">Apply code</button>
+                                        </div>
+                                    </div>
+                                    <hr class="mt-4 text-secondary">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h1 class="text-black fw-normal fs-5 mt-2">Total amount</h1>
+                                            <h1 class="text-secondary fw-normal fs-6 mt-2">Incl.VAT</h1>
+                                        </div>
+                                        <div class="col text-end">
+                                            <h1 class="text-black fw-normal fs-5 mt-2">$6,948.00</h1>
+                                        </div>
+                                    </div>
+                                    <a class="icon-link rounded-3 d-flex justify-content-center align-items-center bg-dark text-white text-decoration-none mt-3 mb-2 col-12"
+                                        href="checkout.html">
+                                        <h1 class="fs-5 fw-normal mt-3 mb-3">Checkout</h1>
+                                        <iconify-icon class="fs-4 mt-1" icon="lets-icons:arrow-right"></iconify-icon>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid">
+        <div class="footer row mt-5">
+            <div class="col">
+                <div class="container mt-5 mb-5">
+                    <div class="row">
+                        <div class="col-lg">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <h2 class="text-white fs-4 fw-lighter mt-4">CONNECT WITH US:</h2>
+                                </div>
+                                <div class="col">
+                                    <ul class="nav">
+                                        <a class="btn bg-white mt-3 mb-3" href="#" role="button">
+                                            <iconify-icon class="text-black fs-3 mt-1"
+                                                icon="hugeicons:instagram"></iconify-icon>
+                                        </a>
+                                        <a class="btn bg-white ms-3 mt-3 mb-3" href="#" role="button">
+                                            <iconify-icon class="text-black fs-3 mt-1"
+                                                icon="hugeicons:twitter"></iconify-icon>
+                                        </a>
+                                        <a class="btn bg-white ms-3 mt-3 mb-3" href="#" role="button">
+                                            <iconify-icon class="text-black fs-3 mt-1"
+                                                icon="hugeicons:facebook-01"></iconify-icon>
+                                        </a>
+                                        <a class="btn bg-white ms-3 mt-3 mb-3" href="#" role="button">
+                                            <iconify-icon class="text-black fs-3 mt-1"
+                                                icon="hugeicons:google"></iconify-icon>
+                                        </a>
+                                        <a class="btn bg-white ms-3 mt-3 mb-3" href="#" role="button">
+                                            <iconify-icon class="text-black fs-3 mt-1"
+                                                icon="hugeicons:pinterest"></iconify-icon>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mt-5 mt-md-3">
+                                <input type="text" class="form-control rounded-0 shadow-none border-0 form-control-lg"
+                                    placeholder="Enter your email for promo offers">
+                                <button class="btn bg-black rounded-0 border-0 text-white w-25" type="button"
+                                    id="button-addon2">SUBMIT</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row bg-black">
+            <div class="col">
+                <div class="container mb-5">
+                    <div class="row">
+                        <div class="col-lg-4 mt-4 mt-md-5">
+                            <div class="logo">
+                                <a class="btn text-white border-0 fs-5 fw-bold ms-lg-1 me-lg-1 mt-lg-3 mb-lg-3"
+                                    href="index.html">BIKE</a>
+                            </div>
+                            <h1 class="fs-6 mt-4 text-secondary fw-normal">All Rights Reserved &#169;2017</h1>
+                        </div>
+                        <div class="col-lg mt-4 mt-md-5">
+                            <h2 class="text-white fs-4 fw-lighter">INFORMATION</h2>
+                            <hr class="text-white">
+                            <p class="mt-3"><a class="text-white text-decoration-none" href="#">About Us</a></p>
+                            <p class="mt-3"><a class="text-white text-decoration-none" href="#">Delivery Infomation</a>
+                            </p>
+                            <p class="mt-3"><a class="text-white text-decoration-none" href="#">Privacy Policy</a></p>
+                            <p class="mt-3"><a class="text-white text-decoration-none" href="#">Terms & Condition</a>
+                            </p>
+                        </div>
+                        <div class="col-lg mt-4 mt-md-5">
+                            <h2 class="text-white fs-4 fw-lighter">ACCOUNT</h2>
+                            <hr class="text-white">
+                            <p class="mt-3"><a class="text-white text-decoration-none" href="#">My account</a></p>
+                            <p class="mt-3"><a class="text-white text-decoration-none" href="#">Order History</a>
+                            </p>
+                            <p class="mt-3"><a class="text-white text-decoration-none" href="#">Wishlist</a></p>
+                            <p class="mt-3"><a class="text-white text-decoration-none" href="#">Newsietter</a>
+                            </p>
+                        </div>
+                        <div class="col-lg mt-4 mt-md-5">
+                            <h2 class="text-white fs-4 fw-lighter">EXTRAS</h2>
+                            <hr class="text-white">
+                            <p class="mt-3"><a class="text-white text-decoration-none" href="#">Gift Voucher</a></p>
+                            <p class="mt-3"><a class="text-white text-decoration-none" href="#">Specials</a>
+                            </p>
+                            <p class="mt-3"><a class="text-white text-decoration-none" href="#">Site Map</a></p>
+                            <p class="mt-3"><a class="text-white text-decoration-none" href="#">Blog</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

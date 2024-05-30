@@ -1,0 +1,33 @@
+.body {
+    font-family: "Oswald", sans-serif;
+}
+
+.logo,
+.shopnow,
+.tothebike a,
+.bestselling a,
+.filter button,
+.footer,
+.addtocart button,
+.signin button,
+.register a,
+.register button,
+.checkout a,
+.profile a,
+.shop button,
+.reset button{
+    background-color: #192930;
+}
+
+.bestselling div.card {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.dropdown-menu a:active{
+    background-color: #192930;
+}
+.color input {
+    width: 35px;
+    height: 35px;
+}
+
